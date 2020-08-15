@@ -1,0 +1,12 @@
+---
+applications:
+- name: demo-docker-san
+  domain: cfapps.io
+  memory: 512m
+  instances: 1
+  docker:
+     image: santhoshj0603/demo-docker:latest
+  services:
+  - CloudRegistry
+  #env:
+     #JAVA_OPTS: '-Xms64m -Xmx512m -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=23246K'
